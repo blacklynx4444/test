@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@font-face {
+    font-family: 'SOYOMapleBoldTTF';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2310@1.0/SOYOMapleBoldTTF.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 18px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul, li {
+    list-style: none;
+}
+
+.hidden{
+    overflow: hidden;
+    display: block;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    border: none;
+    font-size: 0;
+}
+
+section>h2{
+    padding-top: 10vh;
+    padding-bottom: 5vh;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+/* header */
+header {
+    width: 100%;
+    height: 150px;
+    background-color: #332929;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    z-index: 1;
+}
+
+.header_section {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+nav>ul {
+    width: fit-content;
+    margin: auto;
+    text-align: center;
+}
+
+nav>ul>li {
+    float: left;
+    width: 180px;
+    position: relative;
+}
+
+/* Drop Down */
+nav>ul>li>ul {
+    width: 180px;
+    display: none;
+    position: absolute;
+    text-align: center;
+    font-size: 1rem;
+    background-color: #fff;
+    color: #000;
+}
+
+nav>ul>li>ul:not(:last-child) {
+    border-bottom: 1px solid #000;
+}
+
+nav>ul>li:hover>ul {
+    display:block;
+}
+
+nav>ul>li>ul>li:hover {
+    background: #d71514;
+    transition: ease 1s;
+}
+/* //Drop Down */
+
+.language {
+    width: 130px;
+    height: 30px;
+    border: 1px solid #fff;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-family: 'SOYOMapleBoldTTF';
+    text-align: center;
+}
+
+/* main */
+main {
+    background-image: url("../images/main.jpg");
+    width: 100%;
+    height: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main>p {
+    text-align: center;
+    color: #fff;
+    font-weight: 700;
+    text-shadow: 4px 4px 2px #000;
+    font-size: 3rem;
+}
+
+/* section1 */
+.menu_section {
+    width: 100%;
+    height: 1100px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-color: #332929;
+}
+
+.section1_menu {
+    height: 320px;
+}
+
+.section1_menu div {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding-top: 10%;
+    padding-left: 15%;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.section1_menu_1, .section1_menu_4 {
+    background-color: #d71514;
+    color: #fff;
+}
+
+.section1_menu_1:hover, .section1_menu_4:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.section1_menu_2, .section1_menu_3 {
+    background-color: #fff;
+    color: #000;
+}
+
+.section1_menu:hover {
+    background-color: #ff9898;
+    color: #fff;
+}
+
+.section1_menu_3, .section1_menu_4 {
+    margin-top: 20px;
+}
+
+.section1_menu div span {
+    font-size: 1rem;
+}
+
+.section1_menu div p {
+    font-size: 2rem;
+    margin-top: 50px;
+}
+
+.section1_menu img {
+    position: absolute;
+    left: 60%;
+    top: 50%;
+}
+
+.best_boardgames {
+    width: 100%;
+    height: 900px;
+    /* 임시 */
+    overflow: hidden;
+}
+
+.best_5 {
+    margin: auto;
+    width: 700px;
+    overflow: hidden;
+}
+
+/* Slick Slide 이미지 간격 */
+.slick-slide {
+    margin: 0 30px;
+}
+
+.slick-list {
+    margin: 0 -30px;
+}
+/* //Slick Slide 이미지 간격 */
+
+.recruit {
+    background-color: #332929;
+    width: 100%;
+    height: 900px;
+    color: #fff;
+    font-size: 1rem;
+}
+
+.recruit_text {
+    float: left;
+}
+
+.recruit_text>div {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.join_to_us {
+    font-size: 2rem;
+}
+
+.recruit_view_more {
+    width: 200px;
+    height: 60px;
+    border: 2px solid #d71514;
+    color: #d71514;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+}
+
+.recruit_view_more i {
+    font-size: 1.5rem;
+    margin-left: 10px;
+}
+
+.recruit_text_2>p>span {
+    margin-right: 76px;
+}
+
+.recruit_list_menu {
+    text-align: center;
+    height: 250px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.recruit_list_menu p:nth-child(1) {
+    margin-top: 20px
+}
+
+.recruit_list_menu p:nth-child(2) {
+    margin: 50px 0;
+}
