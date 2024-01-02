@@ -15,6 +15,7 @@
 
 html {
     font-size: 18px;
+    font-weight: 400;
     font-family: 'Noto Sans KR', sans-serif;
 }
 
@@ -63,7 +64,7 @@ header {
 }
 
 .header_section {
-    width: 70%;
+    width: 80%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -72,32 +73,43 @@ header {
 nav {
     font-size: 1rem;
     font-weight: 500;
+    font-family: SOYOMapleBoldTTF;
 }
 
 nav>ul {
     width: fit-content;
     margin: auto;
     text-align: center;
+    display: flex;
 }
 
 nav>ul>li {
     float: left;
-    width: 180px;
+    width: 150px;
     position: relative;
+}
+
+nav>ul>li:nth-child(1) {
+    width: 170px;
+}
+
+nav>ul>li:nth-child(2) {
+    width: 170px;
 }
 
 /* Drop Down */
 nav>ul>li>ul {
-    width: 180px;
+    width: 100%;
     display: none;
     position: absolute;
     text-align: center;
     font-size: 1rem;
     background-color: #fff;
     color: #000;
+    transition: ease 1s;
 }
 
-nav>ul>li>ul:not(:last-child) {
+nav>ul>li>ul>li:not(:last-child) {
     border-bottom: 1px solid #000;
 }
 
@@ -121,6 +133,11 @@ nav>ul>li>ul>li:hover {
     text-align: center;
 }
 
+.menu_bar {
+    display: none;
+}
+/* //header */
+
 /* main */
 main {
     background-image: url("../images/main.jpg");
@@ -136,10 +153,11 @@ main>p {
     color: #fff;
     font-weight: 700;
     text-shadow: 4px 4px 2px #000;
-    font-size: 3rem;
+    font-size: 4rem;
 }
+/* //main */
 
-/* section1 */
+/* menu */
 .menu_section {
     width: 100%;
     height: 1100px;
@@ -165,21 +183,25 @@ main>p {
 .section1_menu_1, .section1_menu_4 {
     background-color: #d71514;
     color: #fff;
+    transition: ease 1s;
 }
 
 .section1_menu_1:hover, .section1_menu_4:hover {
     background-color: #fff;
     color: #000;
+    transition: ease 1s;
 }
 
 .section1_menu_2, .section1_menu_3 {
     background-color: #fff;
     color: #000;
+    transition: ease 1s;
 }
 
 .section1_menu:hover {
     background-color: #ff9898;
     color: #fff;
+    transition: ease 1s;
 }
 
 .section1_menu_3, .section1_menu_4 {
@@ -187,12 +209,20 @@ main>p {
 }
 
 .section1_menu div span {
-    font-size: 1rem;
+    font-size: 2rem;
 }
 
 .section1_menu div p {
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin-top: 50px;
+}
+
+.section1_menu_3 img:first-child, .section1_menu_4 img:first-child {
+    display: block;
+}
+
+.section1_menu_3 img:last-child, .section1_menu_4 img:last-child {
+    display: none;
 }
 
 .section1_menu img {
@@ -200,7 +230,9 @@ main>p {
     left: 60%;
     top: 50%;
 }
+/* //menu */
 
+/* BEST BOARDGAME */
 .best_boardgames {
     width: 100%;
     height: 900px;
@@ -223,7 +255,9 @@ main>p {
     margin: 0 -30px;
 }
 /* //Slick Slide 이미지 간격 */
+/* //BEST BOARDGAME */
 
+/* 채용공고 */
 .recruit {
     background-color: #332929;
     width: 100%;
@@ -237,7 +271,6 @@ main>p {
 }
 
 .recruit_text>div {
-    margin-top: 40px;
     margin-bottom: 40px;
 }
 
@@ -253,7 +286,7 @@ main>p {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 
 .recruit_view_more i {
@@ -261,8 +294,12 @@ main>p {
     margin-left: 10px;
 }
 
+.recruit_text_2>p {
+    line-height: 36px;
+}
+
 .recruit_text_2>p>span {
-    margin-right: 76px;
+    margin-right: 82px;
 }
 
 .recruit_list_menu {
@@ -270,12 +307,239 @@ main>p {
     height: 250px;
     border-radius: 20px;
     margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    background-color: #d71514;
+    transition: ease 1s;
+    color: #fff;
 }
 
-.recruit_list_menu p:nth-child(1) {
-    margin-top: 20px
+.recruit_list_menu>a {
+    display: block;
+    width: 160px;
+    height: 250px;
+    border-radius: 20px;
+}
+
+.recruit_list_menu p:first-child {
+    margin-top: 30px;
 }
 
 .recruit_list_menu p:nth-child(2) {
-    margin: 50px 0;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-top: 50px;
+}
+
+.recruit_list_menu:not(.recruit_2)>a>div>p:last-child {
+    margin-top: 50px;
+}
+
+.recruit_end p:last-child {
+    margin-top: 50px;
+}
+
+.recruit_end {
+    background-color: #808080;
+    transition: ease 1s;
+}
+
+.recruit_list_menu:not(.recruit_end):hover {
+    background-color: #ff9898;
+    transition: ease 1s;
+}
+/* //채용공고 */
+
+/* 찾아오는 길 */
+.location {
+    width: 100%;
+    height: 1200px;
+    overflow: hidden;
+}
+
+.map {
+    width: fit-content;
+    height: fit-content;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+.location>.container i {
+    font-size: 2.5rem;
+    line-height: 2px;
+}
+
+.row:first-child {
+    margin-bottom: 35px;
+}
+
+.public_transport_title, .adjacent_title {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+/* //찾아오는 길 */
+
+/* footer */
+footer {
+    padding-top: 20px;
+    width: 100%;
+    height: 150px;
+    background-color: #332929;
+    color: #fff;
+    text-align: center;
+}
+
+.sns {
+    margin: 10px 0 20px 0;
+    font-size: 1.5rem;
+}
+
+.sns>span {
+    margin-right: 40px;
+}
+/* //footer */
+
+
+
+/* - 반응형 - */
+@media screen and (max-width:991px) {
+    /* header */
+    nav {
+        display: none;
+    }
+
+    .language {
+        display: none;
+    }
+
+    .header_section {
+        display: flex;
+        justify-content: center;
+    }
+
+    .menu_bar {
+        display: block;
+        width: 50px;
+        height: 30px;
+        position: absolute;
+        display: flex;
+        left: 85%;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .menu_bar>div {
+        width: 100%;
+        height: calc(20%);
+        background-color: #fff;
+        border-radius: 6px;
+    }
+    /* //header */
+
+    /* menu */
+    .menu_section {
+        height: 1280px;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    
+    .section1_menu div {
+        margin-bottom: 0;
+    }
+
+    .section1_menu_3, .section1_menu_4 {
+        margin-top: 0;
+    }
+
+    .section1_menu_3 img:first-child, .section1_menu_4 img:first-child {
+        display: none;
+    }
+    
+    .section1_menu_3 img:last-child, .section1_menu_4 img:last-child {
+        display: block;
+    }
+
+    .section1_menu_3 {
+        background-color: #d71514;
+        color: #fff;
+    }
+
+    .section1_menu_4 {
+        background-color: #fff;
+        color: #000;
+    }
+    /* //menu */
+
+    /* BEST BOARDGAME */
+    .best_boardgames {
+        background-color: #332929;
+    }
+
+    .best_5_title {
+        color: #fff;
+    }
+    /* //BEST BOARDGAME */
+
+    /* 채용공고 */
+    .recruit {
+        height: 1400px;
+    }
+
+    .recruit_end {
+        display: none;
+    }
+
+    .recruit_text_1 {
+        margin-top: 50px;
+        text-align: center;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .recruit_view_more {
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .recruit_text_2 {
+        margin-top: 300px;
+    }
+
+    .recruit_list_menu {
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .recruit_1 {
+        margin-bottom: 0;
+    }
+
+    .recruit_2 {
+        background-color: #fff;
+        color: #000;
+    }
+
+    .recruit_2:hover {
+        color: #fff;
+    }
+    /* //채용공고 */
+
+    /* 찾아오시는 길 */
+    .location {
+        height: 1300px;
+    }
+
+    iframe {
+        width: 542px;
+    }
+
+    .location>.container .col-lg-7 {
+        margin-bottom: 20px;
+    }
+    /* //찾아오시는 길 */
 }
