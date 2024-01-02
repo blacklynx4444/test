@@ -5,59 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        .section1_menu {
-            border: 2px solid black;
-        }
-
-        .recruit_list_menu {
-            border: 2px solid black;
-        }
-    </style>
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="./css/slick.css">
     <link rel="stylesheet" href="./css/slick-theme.css">
     <link rel="stylesheet" href="./css/common.css">
 
     <script src="https://kit.fontawesome.com/8afd802ec5.js" crossorigin="anonymous"></script>
-    <script src="./script/bootstrap.min.js"></script>
     <script src="./script/jquery-3.7.1.min.js"></script>
     <script src="./script/jquery-ui.min.js"></script>
+    <script src="./script/bootstrap.min.js"></script>
     <script src="./script/slick.min.js"></script>
-    <script src="./script/script.js"></script>
-
-    <!--
-    <script>
-        $(document).ready(function () {
-            $('.best_boardgames_slide').slick({
-                centerMode: true,
-                centerPadding: '30px',
-                slidesToShow: 3,
-                autoplay: true,
-                responsive: [
-                    {
-                        breakpoint: 768,
-                        settings: {
-                            arrows: false,
-                            centerMode: true,
-                            centerPadding: '30px',
-                            slidesToShow: 3
-                        }
-                    },
-                    {
-                        breakpoint: 480,
-                        settings: {
-                            arrows: false,
-                            centerMode: true,
-                            centerPadding: '30px',
-                            slidesToShow: 1
-                        }
-                    }
-                ]
-            });
-        });
-    </script>
-    -->
+    <script src="./script/common.js" defer></script>
 </head>
 
 <body>
@@ -112,6 +70,11 @@
                 <option value="english">English</option>
                 <option value="japanese">日本語</option>
             </select>
+            <div class="menu_bar">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
         </div>
     </header>
 
@@ -124,7 +87,7 @@
         </p>
     </main>
 
-    <!-- section1 -->
+    <!-- menu -->
     <section class="menu_section">
         <h2 class="hidden">레드버튼</h2>
         <div class="container">
@@ -135,7 +98,7 @@
                             <div>
                                 <span>업체소개</span>
                                 <p>
-                                    About out group
+                                    About our group
                                 </p>
                                 <img src="./images/white_arrow.png">
                             </div>
@@ -165,6 +128,7 @@
                                     these games
                                 </p>
                                 <img src="./images/red_arrow.png">
+                                <img src="./images/white_arrow.png">
                             </div>
                         </a>
                     </div>
@@ -178,6 +142,7 @@
                                     Check our news
                                 </p>
                                 <img src="./images/white_arrow.png">
+                                <img src="./images/red_arrow.png">
                             </div>
                         </a>
                     </div>
@@ -186,7 +151,7 @@
         </div>
     </section>
 
-    <!-- section2 -->
+    <!-- BEST BOARDGAME -->
     <section class="best_boardgames">
         <h2 class="best_5_title">고객 선정 보드게임 BEST 5</h2>
         <div class="best_5">
@@ -211,7 +176,7 @@
         </div>
     </section>
 
-    <!-- section3 -->
+    <!-- 채용공고 -->
     <section class="recruit">
         <h2 class="recruit_title">채용공고</h2>
         <div class="container">
@@ -232,11 +197,11 @@
                         </div>
                         <div class="recruit_text_2">
                             <p>
-                                <b>채용제도</b> 공개채용 + 상시채용<br>
-                                <b>채용방법</b> 채용공고 상세 페이지 참고<br>
-                                <b>채용대상</b> 신입 / 경력직<br>
+                                <b>채용제도</b>&nbsp;&nbsp;공개채용 + 상시채용<br>
+                                <b>채용방법</b>&nbsp;&nbsp;채용공고 상세 페이지 참고<br>
+                                <b>채용대상</b>&nbsp;&nbsp;신입 / 경력직<br>
                                 <span></span>(이력서, 포트폴리오, TOEIC 또는 Opic 성적표 첨부)<br>
-                                <b>지원자격</b> 학력무관, 병역 필 및 면제자(남자), 영어 능력 필수,<br>
+                                <b>지원자격</b>&nbsp;&nbsp;학력무관, 병역 필 및 면제자(남자), 영어 능력 필수,<br>
                                 <span></span>해외여행의 결격사유가 없는 자
                             </p>
                         </div>
@@ -287,7 +252,7 @@
                                 </div>
                             </div>
                             <div class="col-lg-4 col-sm-12">
-                                <div class="recruit_list_menu recruit_3">
+                                <div class="recruit_list_menu recruit_3 recruit_end">
                                     <div class="recruit_3_text">
                                         <p>
                                             2024년 상반기
@@ -302,7 +267,7 @@
                                 </div>
                             </div>
                             <div class="col-lg-4 col-sm-12">
-                                <div class="recruit_list_menu recruit_4">
+                                <div class="recruit_list_menu recruit_4 recruit_end">
                                     <div class="recruit_4_text">
                                         <p>
                                             2024년 상반기
@@ -317,7 +282,7 @@
                                 </div>
                             </div>
                             <div class="col-lg-4 col-sm-12">
-                                <div class="recruit_list_menu recruit_5">
+                                <div class="recruit_list_menu recruit_5 recruit_end">
                                     <div class="recruit_5_text">
                                         <p>
                                             2024년 상반기
@@ -332,7 +297,7 @@
                                 </div>
                             </div>
                             <div class="col-lg-4 col-sm-12">
-                                <div class="recruit_list_menu recruit_6">
+                                <div class="recruit_list_menu recruit_6 recruit_end">
                                     <div class="recruit_6_text">
                                         <p>
                                             2024년 상반기
@@ -353,7 +318,7 @@
         </div>
     </section>
 
-    <!-- section4 -->
+    <!-- 찾아오는 길 -->
     <section class="location">
         <h2>본사 위치</h2>
         <div class="map">
@@ -363,33 +328,62 @@
                 referrerpolicy="no-referrer-when-downgrade">
             </iframe>
         </div>
-        <p>
-            <b>주소</b> 경기도 안양시 동안구 동편로13번길 65<br>
-            <b>연락처</b> 031&#41;000&#45;0000
-        </p>
-        <p>
-            <b>찾아오시는 길</b><br>
-        </p>
-        <div class="public_transport">
-            <i class="fa-solid fa-bus"></i> 대중교통
-            버스정류장 해오름공원.동편마을4단지후문 1분 거리<br>
-            수도권 4호선 인덕원역 8번 출구역에서 80번 버스로 두 정거장 후 4분 도보
-        </div>
-        <div class="adjacent">
-            <i class="fa-solid fa-person-walking"></i> 인접 위치
-            해오름초등학교에서 도보로 3분<br>
-            동편공원에서 도보로 3분<br>
-            안양교회 건너편
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <p>
+                        <b>주소</b> 경기도 안양시 동안구 동편로13번길 65<br>
+                        <b>연락처</b> 031&#41;000&#45;0000
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <p>
+                        <b>찾아오시는 길</b><br>
+                    </p>
+                </div>
+                <div class="col-lg-7 col-12">
+                    <div class="public_transport">
+                        <div class="public_transport_title">
+                            <i class="fa-solid fa-bus"></i> 대중교통
+                        </div>
+                        버스정류장 해오름공원.동편마을4단지후문 1분 거리<br>
+                        수도권 4호선 인덕원역 8번 출구역에서 80번 버스로 두 정거장 후 4분 도보
+                    </div>
+                </div>
+                <div class="col-lg-5 col-12">
+                    <div class="adjacent">
+                        <div class="adjacent_title">
+                            <i class="fa-solid fa-person-walking"></i> 인접 위치
+                        </div>
+                        해오름초등학교에서 도보로 3분<br>
+                        동편공원에서 도보로 3분<br>
+                        안양교회 건너편
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- footer -->
     <footer>
         <div class="sns">
-            <i class="fa-brands fa-facebook-f"></i>&nbsp;<i class="fa-brands fa-instagram"></i>&nbsp;<i
-                class="fa-brands fa-x-twitter"></i>
+            <a href="#" class="facebook">
+                <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <span></span>
+            <a href="#" class="instagram">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <span></span>
+            <a href="#" class="X">
+                <i class="fa-brands fa-x-twitter"></i>
+            </a>
         </div>
-        본 사이트는 상업적인 목적이 없으며 실제 정보와는 전혀 무관합니다.
+        <span>
+            본 사이트는 상업적인 목적이 없으며 실제 정보와는 전혀 무관합니다.
+        </span>
     </footer>
 </body>
 
