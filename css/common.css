@@ -1,0 +1,560 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@font-face {
+    font-family: 'SOYOMapleBoldTTF';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2310@1.0/SOYOMapleBoldTTF.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul, li {
+    list-style: none;
+}
+
+.hidden{
+    overflow: hidden;
+    display: block;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    border: none;
+    font-size: 0;
+}
+
+section>h2{
+    padding-top: 10vh;
+    padding-bottom: 5vh;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+/* header */
+header {
+    width: 100%;
+    height: 150px;
+    background-color: #332929;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    z-index: 1;
+}
+
+.header_section {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav {
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: SOYOMapleBoldTTF;
+}
+
+nav>ul {
+    width: fit-content;
+    margin: auto;
+    text-align: center;
+    display: flex;
+}
+
+nav>ul>li {
+    float: left;
+    width: 150px;
+    position: relative;
+}
+
+nav>ul>li:nth-child(1) {
+    width: 170px;
+}
+
+nav>ul>li:nth-child(2) {
+    width: 170px;
+}
+
+/* Drop Down */
+nav>ul>li>ul {
+    width: 100%;
+    display: none;
+    position: absolute;
+    text-align: center;
+    font-size: 1rem;
+    background-color: #fff;
+    color: #000;
+    transition: ease 1s;
+}
+
+nav>ul>li>ul>li:not(:last-child) {
+    border-bottom: 1px solid #000;
+}
+
+nav>ul>li:hover>ul {
+    display:block;
+}
+
+nav>ul>li>ul>li:hover {
+    background: #d71514;
+    transition: ease 1s;
+}
+/* //Drop Down */
+
+/* Mobile page */
+.mobile_menu {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+}
+
+.close_mobile_menu {
+    text-align: right;
+    position: absolute;
+    left: 90%;
+    top: 5%;
+}
+/* //Mobile page */
+
+.language {
+    width: 130px;
+    height: 30px;
+    border: 1px solid #fff;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-family: 'SOYOMapleBoldTTF';
+    text-align: center;
+}
+
+.menu_bar {
+    display: none;
+}
+/* //header */
+
+/* main */
+main {
+    background-image: url("../images/main.jpg");
+    width: 100%;
+    height: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main>p {
+    text-align: center;
+    color: #fff;
+    font-weight: 700;
+    text-shadow: 4px 4px 2px #000;
+    font-size: 4rem;
+}
+/* //main */
+
+/* menu */
+.menu_section {
+    width: 100%;
+    height: 1100px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-color: #332929;
+}
+
+.section1_menu {
+    height: 320px;
+}
+
+.section1_menu div {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding-top: 10%;
+    padding-left: 15%;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.section1_menu_1, .section1_menu_4 {
+    background-color: #d71514;
+    color: #fff;
+    transition: ease 1s;
+}
+
+.section1_menu_1:hover, .section1_menu_4:hover {
+    background-color: #fff;
+    color: #000;
+    transition: ease 1s;
+}
+
+.section1_menu_2, .section1_menu_3 {
+    background-color: #fff;
+    color: #000;
+    transition: ease 1s;
+}
+
+.section1_menu:hover {
+    background-color: #ff9898;
+    color: #fff;
+    transition: ease 1s;
+}
+
+.section1_menu_3, .section1_menu_4 {
+    margin-top: 20px;
+}
+
+.section1_menu div span {
+    font-size: 2rem;
+}
+
+.section1_menu div p {
+    font-size: 1.5rem;
+    margin-top: 50px;
+}
+
+.section1_menu_3 img:first-child, .section1_menu_4 img:first-child {
+    display: block;
+}
+
+.section1_menu_3 img:last-child, .section1_menu_4 img:last-child {
+    display: none;
+}
+
+.section1_menu img {
+    position: absolute;
+    left: 60%;
+    top: 50%;
+}
+/* //menu */
+
+/* BEST BOARDGAME */
+.best_boardgames {
+    width: 100%;
+    height: 900px;
+    /* 임시 */
+    overflow: hidden;
+}
+
+.best_5 {
+    margin: auto;
+    width: 700px;
+    overflow: hidden;
+}
+
+/* Slick Slide 이미지 간격 */
+.slick-slide {
+    margin: 0 30px;
+}
+
+.slick-list {
+    margin: 0 -30px;
+}
+/* //Slick Slide 이미지 간격 */
+/* //BEST BOARDGAME */
+
+/* 채용공고 */
+.recruit {
+    background-color: #332929;
+    width: 100%;
+    height: 900px;
+    color: #fff;
+    font-size: 1rem;
+}
+
+.recruit_text {
+    float: left;
+}
+
+.recruit_text>div {
+    margin-bottom: 40px;
+}
+
+.join_to_us {
+    font-size: 2rem;
+}
+
+.recruit_view_more {
+    width: 200px;
+    height: 60px;
+    border: 2px solid #d71514;
+    color: #d71514;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+.recruit_view_more i {
+    font-size: 1.5rem;
+    margin-left: 10px;
+}
+
+.recruit_text_2>p {
+    line-height: 36px;
+}
+
+.recruit_text_2>p>span {
+    margin-right: 82px;
+}
+
+.recruit_list_menu {
+    text-align: center;
+    height: 250px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    background-color: #d71514;
+    transition: ease 1s;
+    color: #fff;
+}
+
+.recruit_list_menu>a {
+    display: block;
+    width: 160px;
+    height: 250px;
+    border-radius: 20px;
+}
+
+.recruit_list_menu p:first-child {
+    margin-top: 30px;
+}
+
+.recruit_list_menu p:nth-child(2) {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-top: 50px;
+}
+
+.recruit_list_menu:not(.recruit_2)>a>div>p:last-child {
+    margin-top: 50px;
+}
+
+.recruit_end p:last-child {
+    margin-top: 50px;
+}
+
+.recruit_end {
+    background-color: #808080;
+    transition: ease 1s;
+}
+
+.recruit_list_menu:not(.recruit_end):hover {
+    background-color: #ff9898;
+    transition: ease 1s;
+}
+/* //채용공고 */
+
+/* 찾아오는 길 */
+.location {
+    width: 100%;
+    height: 1200px;
+    overflow: hidden;
+}
+
+.map {
+    width: fit-content;
+    height: fit-content;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+.location>.container i {
+    font-size: 2.5rem;
+    line-height: 2px;
+}
+
+.row:first-child {
+    margin-bottom: 35px;
+}
+
+.public_transport_title, .adjacent_title {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+/* //찾아오는 길 */
+
+/* footer */
+footer {
+    padding-top: 20px;
+    width: 100%;
+    height: 150px;
+    background-color: #332929;
+    color: #fff;
+    text-align: center;
+}
+
+.sns {
+    margin: 10px 0 20px 0;
+    font-size: 1.5rem;
+}
+
+.sns>span {
+    margin-right: 40px;
+}
+/* //footer */
+
+
+
+/* - 반응형 - */
+@media screen and (max-width:991px) {
+    /* header */
+    nav {
+        display: none;
+    }
+
+    .language {
+        display: none;
+    }
+
+    .header_section {
+        display: flex;
+        justify-content: center;
+    }
+
+    .menu_bar {
+        display: block;
+        width: 50px;
+        height: 30px;
+        position: absolute;
+        display: flex;
+        left: 85%;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .menu_bar>div {
+        width: 100%;
+        height: calc(20%);
+        background-color: #fff;
+        border-radius: 6px;
+    }
+    /* //header */
+
+    /* menu */
+    .menu_section {
+        height: 1280px;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    
+    .section1_menu div {
+        margin-bottom: 0;
+    }
+
+    .section1_menu_3, .section1_menu_4 {
+        margin-top: 0;
+    }
+
+    .section1_menu_3 img:first-child, .section1_menu_4 img:first-child {
+        display: none;
+    }
+    
+    .section1_menu_3 img:last-child, .section1_menu_4 img:last-child {
+        display: block;
+    }
+
+    .section1_menu_3 {
+        background-color: #d71514;
+        color: #fff;
+    }
+
+    .section1_menu_4 {
+        background-color: #fff;
+        color: #000;
+    }
+    /* //menu */
+
+    /* BEST BOARDGAME */
+    .best_boardgames {
+        background-color: #332929;
+    }
+
+    .best_5_title {
+        color: #fff;
+    }
+    /* //BEST BOARDGAME */
+
+    /* 채용공고 */
+    .recruit {
+        height: 1400px;
+    }
+
+    .recruit_end {
+        display: none;
+    }
+
+    .recruit_text_1 {
+        margin-top: 50px;
+        text-align: center;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .recruit_view_more {
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .recruit_text_2 {
+        margin-top: 300px;
+    }
+
+    .recruit_list_menu {
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .recruit_1 {
+        margin-bottom: 0;
+    }
+
+    .recruit_2 {
+        background-color: #fff;
+        color: #000;
+    }
+
+    .recruit_2:hover {
+        color: #fff;
+    }
+    /* //채용공고 */
+
+    /* 찾아오시는 길 */
+    .location {
+        height: 1300px;
+    }
+
+    iframe {
+        width: 542px;
+    }
+
+    .location>.container .col-lg-7 {
+        margin-bottom: 20px;
+    }
+    /* //찾아오시는 길 */
+}
