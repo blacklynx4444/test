@@ -597,6 +597,10 @@ footer {
         /* //menu */
 
         /* 채용공고 */
+        .join_to_us {
+            line-height: 40px;
+        }
+        
         .recruit {
             height: 1600px;
         }
